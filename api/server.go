@@ -50,9 +50,7 @@ func (s *server) LogDebug(v ...interface{}) {
 }
 
 func (s *server) getParams(r *http.Request) map[string]string {
-	params := mux.Vars(r)
-
-	return params
+	return mux.Vars(r)
 }
 
 func (s *server) getQueryParams(r *http.Request) url.Values {
