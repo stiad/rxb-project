@@ -1,0 +1,7 @@
+POST http://localhost:8080/films/1/comments
+Content-Type: application/json
+
+{
+  "customerID": 1,
+  "comment": "This is a test comment"
+}
